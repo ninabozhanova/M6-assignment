@@ -1,5 +1,4 @@
-window.addEventListener('load', init)
-function init() {
+window.addEventListener('load', () => {
     const $ = (id) => document.getElementById(id)
     let form = $('empForm')
     let id = $('id')
@@ -10,4 +9,4 @@ function init() {
     form.addEventListener("submit", (e) => {e.preventDefault() 
         console.log(`ID: ${id.value}\nName: ${fullName.value}\nExtension: ${ext.value}\nEmail: ${email.value}\nDepartment: ${department.value}`)
     })
-}
+})
